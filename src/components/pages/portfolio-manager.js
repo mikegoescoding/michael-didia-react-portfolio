@@ -34,7 +34,6 @@ export default class PortfolioManager extends Component {
 	}
 
 	handleDeleteClick(portfolioItem) {
-		console.log("handleDeleteClick", portfolioItem);
 		axios
 			.delete(
 				`https://api.devcamp.space/portfolio/portfolio_items/${portfolioItem.id}`,
